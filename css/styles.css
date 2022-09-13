@@ -155,8 +155,6 @@ img {
 .contacts {
     display: flex;
 }
-.contacts > .item {
-}
 .contacts .item {
     fill: currentColor;
 }
