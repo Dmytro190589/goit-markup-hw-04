@@ -336,7 +336,7 @@ img {
         border-radius: 4px;
 }
 .clients .icon {
-    fill: #AFB1B8;
+    fill:#AFB1B8;
 }
 .link-clients:hover .icon{
     fill: #2196f3;
