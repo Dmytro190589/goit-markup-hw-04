@@ -16,6 +16,8 @@
     --accent-color-boxshadov-btn-nav3: rgba(0, 0, 0, 0.12);
     --accent-color-boxshadov-btn-nav4: rgba(0, 0, 0, 0.14);
     --accent-color-boxshadov-btn-nav5: rgba(0, 0, 0, 0.2);
+    --transituin-duration: 250ms;
+    --timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 body {
     font-family: var(--primary-font);
@@ -85,6 +87,10 @@ img {
     font-weight: 500;
     text-decoration: none;
     color: var(--accent-color-link);
+
+    transition-property: color;
+    transition-duration: var(--transituin-duration);
+    transition-timing-function: var(--timing-function);
 }
 .logo-blue {
     font-family: var(--secondary-font);
@@ -115,7 +121,8 @@ img {
 
 .link-list .link:hover,
 .link-list .link:focus {
-    color: var(--primary-text-color-theme-light);
+   color: var(--primary-text-color-theme-light);
+   
 }
 .boxcolor {
     background-color: #ffffff;
@@ -228,6 +235,14 @@ img {
     letter-spacing: 0.06em;
     color: var(--primary-text-color-theme-dark);
     cursor: pointer;
+
+    transition-property: background-color, box-shadow, border-radius;
+    transition-timing-function: var(--timing-function);
+    transition-duration: var(--transituin-duration);
+    
+
+    
+
 }
 .specialists {
     display: flex;
@@ -323,6 +338,11 @@ img {
     height: 44px;
     border-radius: 50%;
     color: #afb1b8;
+
+    transition-property: background-colar, color;
+    transition-timing-function: var(--timing-function);
+    transition-duration: var(--transituin-duration);
+
 }
 
 .link-social:hover,
@@ -352,6 +372,10 @@ img {
         height: 92px;
         border: 1px solid #AFB1B8;
         border-radius: 4px;
+
+        transition-property: border-color, color;
+        transition-duration: var(--transituin-duration);
+        transition-timing-function: var(--timing-function);
 }
 .clients .icon {
     fill: #AFB1B8;
@@ -412,6 +436,9 @@ img {
 .location {
     line-height: 1.71;
     color: var(--primary-text-color-theme-dark);
+    transition-property: color;
+    transition-timing-function: var(--timing-function);
+    transition-duration: var(--transituin-duration);
 }
 
 .location:hover,
@@ -456,6 +483,15 @@ header {
     background-color: var(--accent-colpr-btn-nav);
     border-radius: 4px;
     border: none;
+
+        transition-property: color, background-color, box-shadow;
+        transition-duration: var(--transituin-duration);
+        transition-timing-function: var(--timing-function);
+}
+.foto {
+    transition-property: box-shadow;
+    transition-duration: var(--transituin-duration);
+    transition-timing-function: var(--timing-function);
 }
 li.foto:hover{
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
@@ -465,7 +501,7 @@ li.foto:hover{
 .btn-navigation:hover,
 .btn-navigation:focus {
     color: var(--primary-text-color-theme-dark);
-    background-color: var(--primary-text-color-theme-light);
+    background-color: rgba(24, 140, 232, 1);
     box-shadow: 0px 3px 1px var(--accent-color-boxshadov-btn-nav1), 0px 1px 2px var(--accent-color-boxshadov-btn-nav2),
         0px 2px 2px var(--accent-color-boxshadov-btn-nav3);
 }
@@ -525,10 +561,15 @@ li.foto:hover{
     height: 44px;
     border-radius: 50%;
     background-color: rgba(255, 255, 255, 0.1);
+
+    transition-property: background-color;
+    transition-timing-function: var(--timing-function);
+    transition-duration: var(--transituin-duration);
 }
 .footer-social .footer-item + .footer-item {
     margin-left: 10px;
 }
+
 .footer-socail-icon {
     fill: var(--primary-text-color-theme-dark);
 }
