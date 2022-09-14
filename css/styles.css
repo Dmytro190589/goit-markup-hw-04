@@ -335,9 +335,14 @@ img {
         border: 1px solid #AFB1B8;
         border-radius: 4px;
 }
+.link-clients:hover,
+.link-clients:focus{
+   
+
+}
 
 .clients .icon {
-    fill: #AFB1B8;
+    fill:#AFB1B8;
 }
 
 
