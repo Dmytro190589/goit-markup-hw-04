@@ -335,10 +335,20 @@ img {
         border: 1px solid #AFB1B8;
         border-radius: 4px;
 }
-
 .clients .icon {
     fill: #AFB1B8;
 }
+.link-clients:hover .icon{
+    fill: #2196f3;
+}
+.link-clients:hover,
+.link-clients:focus{
+    color: var(--primary-text-color-theme-light);
+    border-color: var(--primary-text-color-theme-light);
+
+}
+
+
 
 
 /* ===Footer---- */
